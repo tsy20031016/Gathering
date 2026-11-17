@@ -1,0 +1,1 @@
+page{background:#f5f5ef;color:#202c29;font-family:system-ui}button::after{border:none}button{font-size:28rpx;border-radius:18rpx} .muted{color:#74807a;font-size:24rpx}

@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-30T15:01:36.854Z",
+  "automatedSchedule": false,
+  "checks": [
+    {
+      "id": "nvidia",
+      "checkedAt": "2026-10-30T15:01:26.153Z",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://docs.nvidia.com/agent-policy-fabric",
+      "hash": "da815112cc15c9a0d839553645e948d571b8fdad2fb4ebd3542c47c451edd0bb",
+      "changed": null,
+      "note": "页面可访问不等于内容已核验；指纹变化也不等于技术发布。"
+    },
+    {
+      "id": "deepmind",
+      "checkedAt": "2026-10-30T15:01:26.231Z",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "id": "microsoft",
+      "checkedAt": "2026-10-30T15:01:26.233Z",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://learn.microsoft.com/en-us/agent-framework/",
+      "hash": "b145fda4c8f21dd5db88ed398611205a301c69d0498aef8a2838ca323f7922ee",
+      "changed": null,
+      "note": "页面可访问不等于内容已核验；指纹变化也不等于技术发布。"
+    },
+    {
+      "id": "qwen",
+      "checkedAt": "2026-10-30T15:01:26.234Z",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "id": "bytedance",
+      "checkedAt": "2026-10-30T15:01:26.236Z",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "id": "anthropic",
+      "checkedAt": "2026-10-30T15:01:26.238Z",
+      "status": "failed",
+      "error": "fetch failed"
+    }
+  ]
+}

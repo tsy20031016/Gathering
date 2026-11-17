@@ -1,0 +1,11 @@
+/data/
+/release/
+/site-checkout/
+/site-live/
+/web/.openai/
+/web/preview-*.png
+.env
+.env.*
+!.env.example
+node_modules/
+project.private.config.json

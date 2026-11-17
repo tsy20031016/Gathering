@@ -1,0 +1,253 @@
+{
+  "verifiedAt": "2026-11-17",
+  "selectionMode": "editorial-observation",
+  "intro": "公司技术、研究成果与开源工具共同进入观察范围；精选依据原始资料核验，不以 Star 决定价值。",
+  "sources": [
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "kind": "技术文档 / 开发者博客",
+      "url": "https://docs.nvidia.com/agent-policy-fabric",
+      "organization": "NVIDIA"
+    },
+    {
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "kind": "研究博客",
+      "url": "https://deepmind.google/blog/",
+      "organization": "Google DeepMind"
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "kind": "技术文档",
+      "url": "https://learn.microsoft.com/en-us/agent-framework/",
+      "organization": "Microsoft"
+    },
+    {
+      "id": "qwen",
+      "name": "阿里 · Qwen",
+      "kind": "研究与模型发布",
+      "url": "https://qwen.ai/research",
+      "organization": "Alibaba"
+    },
+    {
+      "id": "bytedance",
+      "name": "字节 · Seed",
+      "kind": "研究与技术发布",
+      "url": "https://seed.bytedance.com/en/",
+      "organization": "ByteDance"
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "kind": "工程博客",
+      "url": "https://www.anthropic.com/engineering",
+      "organization": "Anthropic"
+    }
+  ],
+  "items": [
+    {
+      "id": "antigravity-teamwork-20261113",
+      "canonicalId": "antigravity-teamwork-20261113",
+      "name": "Antigravity /teamwork",
+      "fullName": "Antigravity /teamwork",
+      "organization": "Google Research",
+      "kind": "公司技术",
+      "category": "智能体",
+      "headline": "把生成、反驳和验证组织成长任务工作流。",
+      "description": "Google 分享多智能体在科研与系统工程中的应用，并开放部分工作流；专门的验证器检查候选结果，独立上下文的评审者复核输出。",
+      "useCase": "用于有明确测试、证明检查器或性能指标的工程任务；先确定验收条件，再探索候选方案。",
+      "takeaway": "借鉴思路：把候选生成与验证分开，长任务交接时限制上下文，保留可复查的结果。",
+      "limitation": "本文为官方案例与方法介绍，未独立复现；部分专门工作流仍将陆续开放，不能假定所有能力均已可用。",
+      "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+      "tags": [
+        "多智能体",
+        "长任务",
+        "验证器"
+      ],
+      "status": "本期新收录 · 官方原文核验",
+      "publishedAt": "2026-11-13",
+      "verifiedAt": "2026-11-17",
+      "review": null,
+      "sources": [
+        {
+          "label": "Google Research 官方原文",
+          "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+          "type": "research",
+          "primary": true
+        }
+      ]
+    },
+    {
+      "id": "anthropic-safety-evaluations-20261113",
+      "canonicalId": "anthropic-safety-evaluations-20261113",
+      "name": "Building strong safety evaluations",
+      "fullName": "Building strong safety evaluations",
+      "organization": "Anthropic",
+      "kind": "公司技术",
+      "category": "智能体安全",
+      "headline": "安全评测要测真实行为，也要检查正常请求被误拒的情况。",
+      "description": "Anthropic 发布安全评测设计、运行与报告建议，强调真实多轮场景、领域专家评分规则、评测器校准及可复现记录。",
+      "useCase": "为聊天助手设计覆盖逐步升级意图的多轮测试，同时搭配正常请求检查过度拒绝。",
+      "takeaway": "借鉴思路：先明确评测问题，再设计样本；对整段对话评分，分开记录安全表现与误拒。",
+      "limitation": "这是工程方法建议，不是新的通用安全保证；评测需结合具体产品环境，模型评分器仍需人工校准。",
+      "url": "https://www.anthropic.com/research/building-strong-safety-evaluations",
+      "tags": [
+        "多轮评测",
+        "评分校准",
+        "可复现"
+      ],
+      "status": "本期新收录 · 官方原文核验",
+      "publishedAt": "2026-11-13",
+      "verifiedAt": "2026-11-17",
+      "review": null,
+      "sources": [
+        {
+          "label": "Anthropic 官方原文",
+          "url": "https://www.anthropic.com/research/building-strong-safety-evaluations",
+          "type": "research",
+          "primary": true
+        }
+      ]
+    },
+    {
+      "id": "deepmind-weather-datasets-20261113",
+      "canonicalId": "deepmind-weather-datasets-20261113",
+      "name": "PARDIG & SatWeave",
+      "fullName": "PARDIG & SatWeave",
+      "organization": "Google DeepMind",
+      "kind": "研究成果",
+      "category": "基础设施",
+      "headline": "开放天气模型背后的观测数据，让下游研究能从数据开始。",
+      "description": "Google DeepMind 开放 SatWeave 卫星观测与 PARDIG 降水数据的历史档案和实时数据入口，支持天气、水文与气候应用。",
+      "useCase": "探索天气观测融合、降水研究与下游模型开发；先核对数据时间范围、分辨率与访问条件。",
+      "takeaway": "借鉴思路：将实时观测与历史训练档案一起提供，让下游团队可以复查数据并建立可比较的评估。",
+      "limitation": "性能结论来自官方评估，本站未独立复现；分辨率与延迟限制需要按具体应用评估，不能直接等同于本地预警能力。",
+      "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+      "tags": [
+        "开放数据",
+        "天气AI",
+        "观测融合"
+      ],
+      "status": "本期新收录 · 官方原文核验",
+      "publishedAt": "2026-11-13",
+      "verifiedAt": "2026-11-17",
+      "review": null,
+      "sources": [
+        {
+          "label": "Google DeepMind 官方原文",
+          "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+          "type": "research",
+          "primary": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-apf",
+      "canonicalId": "nvidia-agent-policy-fabric",
+      "name": "NVIDIA APF",
+      "fullName": "Agent Policy Fabric",
+      "organization": "NVIDIA",
+      "kind": "公司技术",
+      "category": "智能体安全",
+      "headline": "让智能体的权限，成为可验证的系统规则。",
+      "description": "通过签名策略声明允许的操作，由运行时执行限制，并记录操作决策所依据的策略版本。",
+      "useCase": "借鉴思路：把授权、执行与审计分开设计，为智能体建立统一的权限边界。",
+      "takeaway": "可借鉴之处是权限治理架构，而非单靠提示词约束智能体。此条为编辑解读。",
+      "limitation": "官方标注为 Dev / 持续开发；文档中 In Development 的能力不能视为已实现，采用前需核对兼容性说明。",
+      "status": "开发中 · Dev",
+      "publishedAt": null,
+      "verifiedAt": "2026-10-30",
+      "review": null,
+      "tags": [
+        "权限管理",
+        "签名策略",
+        "可追溯决策"
+      ],
+      "sources": [
+        {
+          "label": "NVIDIA 官方文档",
+          "url": "https://docs.nvidia.com/agent-policy-fabric",
+          "type": "documentation",
+          "primary": true
+        }
+      ],
+      "url": "https://docs.nvidia.com/agent-policy-fabric"
+    },
+    {
+      "id": "google-alphaevolve",
+      "canonicalId": "google-deepmind-alphaevolve",
+      "name": "AlphaEvolve",
+      "fullName": "Algorithm discovery with evaluators",
+      "organization": "Google DeepMind",
+      "kind": "研究成果",
+      "category": "算法发现",
+      "headline": "让模型提出方案，用评估器筛出更好的算法。",
+      "description": "结合语言模型、自动评估器和进化式搜索，探索可量化验证的算法改进。",
+      "useCase": "借鉴思路：先设计正确性与性能评估，再让模型迭代提出程序候选。",
+      "takeaway": "这条研究路线值得借鉴的是“生成—验证—择优”的闭环，而不只是自动写代码。此条为编辑解读。",
+      "limitation": "收录的是 2025 年研究发布，用于方法观察；并非本周新发布，也不据此承诺任何特定性能收益。",
+      "status": "研究方法观察",
+      "publishedAt": "2025-05-14",
+      "verifiedAt": "2026-10-30",
+      "review": null,
+      "tags": [
+        "自动评估",
+        "程序搜索",
+        "算法优化"
+      ],
+      "sources": [
+        {
+          "label": "DeepMind 原始研究博客",
+          "url": "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/",
+          "type": "research",
+          "primary": true
+        }
+      ],
+      "url": "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/"
+    },
+    {
+      "id": "microsoft-agent-framework",
+      "canonicalId": "microsoft-agent-framework",
+      "name": "Microsoft Agent Framework",
+      "fullName": "Agents & explicit workflows",
+      "organization": "Microsoft",
+      "kind": "公司技术",
+      "category": "智能体",
+      "headline": "把开放式推理与确定的工作流，各放在合适的位置。",
+      "description": "提供智能体、工作流、会话与集成能力，帮助开发者组织工具调用和多步骤执行。",
+      "useCase": "借鉴思路：开放式任务交给智能体，步骤确定的业务流程用显式工作流编排。",
+      "takeaway": "与其让所有步骤都由模型决定，不如明确哪些环节需要确定的执行顺序。此条为编辑解读。",
+      "limitation": "不同语言与组件的支持范围不同，应按官方兼容性说明验证；当前资料页未用于确认本周发布日期。",
+      "status": "官方文档已核验",
+      "publishedAt": null,
+      "verifiedAt": "2026-10-30",
+      "review": null,
+      "tags": [
+        "工作流",
+        "工具调用",
+        "状态管理"
+      ],
+      "sources": [
+        {
+          "label": "Microsoft Learn 官方文档",
+          "url": "https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview",
+          "type": "documentation",
+          "primary": true
+        }
+      ],
+      "url": "https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview"
+    }
+  ],
+  "weekly": {
+    "issue": "2026-11-17",
+    "period": "2026-11-10 — 2026-11-17",
+    "publishedAt": "2026-11-17",
+    "itemIds": [
+      "antigravity-teamwork-20261113",
+      "anthropic-safety-evaluations-20261113",
+      "deepmind-weather-datasets-20261113"
+    ]
+  }
+}

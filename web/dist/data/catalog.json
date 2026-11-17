@@ -1,0 +1,1618 @@
+{
+  "weekly": {
+    "issue": "2026-11-17",
+    "period": "2026-11-10 — 2026-11-17",
+    "publishedAt": "2026-11-17",
+    "itemIds": [
+      "antigravity-teamwork-20261113",
+      "anthropic-safety-evaluations-20261113",
+      "deepmind-weather-datasets-20261113"
+    ]
+  },
+  "frontiers": [
+    {
+      "id": "antigravity-teamwork-20261113",
+      "canonicalId": "antigravity-teamwork-20261113",
+      "name": "Antigravity /teamwork",
+      "fullName": "Antigravity /teamwork",
+      "organization": "Google Research",
+      "kind": "公司技术",
+      "category": "智能体",
+      "headline": "把生成、反驳和验证组织成长任务工作流。",
+      "description": "Google 分享多智能体在科研与系统工程中的应用，并开放部分工作流；专门的验证器检查候选结果，独立上下文的评审者复核输出。",
+      "useCase": "用于有明确测试、证明检查器或性能指标的工程任务；先确定验收条件，再探索候选方案。",
+      "takeaway": "借鉴思路：把候选生成与验证分开，长任务交接时限制上下文，保留可复查的结果。",
+      "limitation": "本文为官方案例与方法介绍，未独立复现；部分专门工作流仍将陆续开放，不能假定所有能力均已可用。",
+      "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+      "tags": [
+        "多智能体",
+        "长任务",
+        "验证器"
+      ],
+      "status": "本期新收录 · 官方原文核验",
+      "publishedAt": "2026-11-13",
+      "verifiedAt": "2026-11-17",
+      "review": null,
+      "sources": [
+        {
+          "label": "Google Research 官方原文",
+          "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+          "type": "research",
+          "primary": true
+        }
+      ]
+    },
+    {
+      "id": "anthropic-safety-evaluations-20261113",
+      "canonicalId": "anthropic-safety-evaluations-20261113",
+      "name": "Building strong safety evaluations",
+      "fullName": "Building strong safety evaluations",
+      "organization": "Anthropic",
+      "kind": "公司技术",
+      "category": "智能体安全",
+      "headline": "安全评测要测真实行为，也要检查正常请求被误拒的情况。",
+      "description": "Anthropic 发布安全评测设计、运行与报告建议，强调真实多轮场景、领域专家评分规则、评测器校准及可复现记录。",
+      "useCase": "为聊天助手设计覆盖逐步升级意图的多轮测试，同时搭配正常请求检查过度拒绝。",
+      "takeaway": "借鉴思路：先明确评测问题，再设计样本；对整段对话评分，分开记录安全表现与误拒。",
+      "limitation": "这是工程方法建议，不是新的通用安全保证；评测需结合具体产品环境，模型评分器仍需人工校准。",
+      "url": "https://www.anthropic.com/research/building-strong-safety-evaluations",
+      "tags": [
+        "多轮评测",
+        "评分校准",
+        "可复现"
+      ],
+      "status": "本期新收录 · 官方原文核验",
+      "publishedAt": "2026-11-13",
+      "verifiedAt": "2026-11-17",
+      "review": null,
+      "sources": [
+        {
+          "label": "Anthropic 官方原文",
+          "url": "https://www.anthropic.com/research/building-strong-safety-evaluations",
+          "type": "research",
+          "primary": true
+        }
+      ]
+    },
+    {
+      "id": "deepmind-weather-datasets-20261113",
+      "canonicalId": "deepmind-weather-datasets-20261113",
+      "name": "PARDIG & SatWeave",
+      "fullName": "PARDIG & SatWeave",
+      "organization": "Google DeepMind",
+      "kind": "研究成果",
+      "category": "基础设施",
+      "headline": "开放天气模型背后的观测数据，让下游研究能从数据开始。",
+      "description": "Google DeepMind 开放 SatWeave 卫星观测与 PARDIG 降水数据的历史档案和实时数据入口，支持天气、水文与气候应用。",
+      "useCase": "探索天气观测融合、降水研究与下游模型开发；先核对数据时间范围、分辨率与访问条件。",
+      "takeaway": "借鉴思路：将实时观测与历史训练档案一起提供，让下游团队可以复查数据并建立可比较的评估。",
+      "limitation": "性能结论来自官方评估，本站未独立复现；分辨率与延迟限制需要按具体应用评估，不能直接等同于本地预警能力。",
+      "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+      "tags": [
+        "开放数据",
+        "天气AI",
+        "观测融合"
+      ],
+      "status": "本期新收录 · 官方原文核验",
+      "publishedAt": "2026-11-13",
+      "verifiedAt": "2026-11-17",
+      "review": null,
+      "sources": [
+        {
+          "label": "Google DeepMind 官方原文",
+          "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+          "type": "research",
+          "primary": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-apf",
+      "canonicalId": "nvidia-agent-policy-fabric",
+      "name": "NVIDIA APF",
+      "fullName": "Agent Policy Fabric",
+      "organization": "NVIDIA",
+      "kind": "公司技术",
+      "category": "智能体安全",
+      "headline": "让智能体的权限，成为可验证的系统规则。",
+      "description": "通过签名策略声明允许的操作，由运行时执行限制，并记录操作决策所依据的策略版本。",
+      "useCase": "借鉴思路：把授权、执行与审计分开设计，为智能体建立统一的权限边界。",
+      "takeaway": "可借鉴之处是权限治理架构，而非单靠提示词约束智能体。此条为编辑解读。",
+      "limitation": "官方标注为 Dev / 持续开发；文档中 In Development 的能力不能视为已实现，采用前需核对兼容性说明。",
+      "status": "开发中 · Dev",
+      "publishedAt": null,
+      "verifiedAt": "2026-10-30",
+      "review": null,
+      "tags": [
+        "权限管理",
+        "签名策略",
+        "可追溯决策"
+      ],
+      "sources": [
+        {
+          "label": "NVIDIA 官方文档",
+          "url": "https://docs.nvidia.com/agent-policy-fabric",
+          "type": "documentation",
+          "primary": true
+        }
+      ],
+      "url": "https://docs.nvidia.com/agent-policy-fabric"
+    },
+    {
+      "id": "google-alphaevolve",
+      "canonicalId": "google-deepmind-alphaevolve",
+      "name": "AlphaEvolve",
+      "fullName": "Algorithm discovery with evaluators",
+      "organization": "Google DeepMind",
+      "kind": "研究成果",
+      "category": "算法发现",
+      "headline": "让模型提出方案，用评估器筛出更好的算法。",
+      "description": "结合语言模型、自动评估器和进化式搜索，探索可量化验证的算法改进。",
+      "useCase": "借鉴思路：先设计正确性与性能评估，再让模型迭代提出程序候选。",
+      "takeaway": "这条研究路线值得借鉴的是“生成—验证—择优”的闭环，而不只是自动写代码。此条为编辑解读。",
+      "limitation": "收录的是 2025 年研究发布，用于方法观察；并非本周新发布，也不据此承诺任何特定性能收益。",
+      "status": "研究方法观察",
+      "publishedAt": "2025-05-14",
+      "verifiedAt": "2026-10-30",
+      "review": null,
+      "tags": [
+        "自动评估",
+        "程序搜索",
+        "算法优化"
+      ],
+      "sources": [
+        {
+          "label": "DeepMind 原始研究博客",
+          "url": "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/",
+          "type": "research",
+          "primary": true
+        }
+      ],
+      "url": "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/"
+    },
+    {
+      "id": "microsoft-agent-framework",
+      "canonicalId": "microsoft-agent-framework",
+      "name": "Microsoft Agent Framework",
+      "fullName": "Agents & explicit workflows",
+      "organization": "Microsoft",
+      "kind": "公司技术",
+      "category": "智能体",
+      "headline": "把开放式推理与确定的工作流，各放在合适的位置。",
+      "description": "提供智能体、工作流、会话与集成能力，帮助开发者组织工具调用和多步骤执行。",
+      "useCase": "借鉴思路：开放式任务交给智能体，步骤确定的业务流程用显式工作流编排。",
+      "takeaway": "与其让所有步骤都由模型决定，不如明确哪些环节需要确定的执行顺序。此条为编辑解读。",
+      "limitation": "不同语言与组件的支持范围不同，应按官方兼容性说明验证；当前资料页未用于确认本周发布日期。",
+      "status": "官方文档已核验",
+      "publishedAt": null,
+      "verifiedAt": "2026-10-30",
+      "review": null,
+      "tags": [
+        "工作流",
+        "工具调用",
+        "状态管理"
+      ],
+      "sources": [
+        {
+          "label": "Microsoft Learn 官方文档",
+          "url": "https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview",
+          "type": "documentation",
+          "primary": true
+        }
+      ],
+      "url": "https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "kind": "技术文档 / 开发者博客",
+      "url": "https://docs.nvidia.com/agent-policy-fabric",
+      "organization": "NVIDIA"
+    },
+    {
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "kind": "研究博客",
+      "url": "https://deepmind.google/blog/",
+      "organization": "Google DeepMind"
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "kind": "技术文档",
+      "url": "https://learn.microsoft.com/en-us/agent-framework/",
+      "organization": "Microsoft"
+    },
+    {
+      "id": "qwen",
+      "name": "阿里 · Qwen",
+      "kind": "研究与模型发布",
+      "url": "https://qwen.ai/research",
+      "organization": "Alibaba"
+    },
+    {
+      "id": "bytedance",
+      "name": "字节 · Seed",
+      "kind": "研究与技术发布",
+      "url": "https://seed.bytedance.com/en/",
+      "organization": "ByteDance"
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "kind": "工程博客",
+      "url": "https://www.anthropic.com/engineering",
+      "organization": "Anthropic"
+    }
+  ],
+  "verifiedAt": "2026-11-17",
+  "frontierSpec": {
+    "version": "frontier-cross-source-v1",
+    "weights": {
+      "novelty": 30,
+      "applicability": 30,
+      "evidence": 25,
+      "recency": 15
+    },
+    "maxPerOrganization": 2
+  },
+  "frontierRanking": {
+    "version": "frontier-cross-source-v1",
+    "asOf": "2026-11-17T23:17:08.898Z",
+    "ready": false,
+    "ranked": [],
+    "excluded": [
+      {
+        "id": "antigravity-teamwork-20261113",
+        "reason": "编辑评估待完成"
+      },
+      {
+        "id": "anthropic-safety-evaluations-20261113",
+        "reason": "编辑评估待完成"
+      },
+      {
+        "id": "deepmind-weather-datasets-20261113",
+        "reason": "编辑评估待完成"
+      },
+      {
+        "id": "nvidia-agent-policy-fabric",
+        "reason": "发布时间或实质更新日期待确认"
+      },
+      {
+        "id": "google-deepmind-alphaevolve",
+        "reason": "编辑评估待完成"
+      },
+      {
+        "id": "microsoft-agent-framework",
+        "reason": "发布时间或实质更新日期待确认"
+      }
+    ],
+    "qualified": 0
+  },
+  "sourceChecks": {
+    "checkedAt": "2026-10-30T15:01:36.854Z",
+    "automatedSchedule": false,
+    "checks": [
+      {
+        "id": "nvidia",
+        "checkedAt": "2026-10-30T15:01:26.153Z",
+        "status": "reachable",
+        "httpStatus": 200,
+        "finalUrl": "https://docs.nvidia.com/agent-policy-fabric",
+        "hash": "da815112cc15c9a0d839553645e948d571b8fdad2fb4ebd3542c47c451edd0bb",
+        "changed": null,
+        "note": "页面可访问不等于内容已核验；指纹变化也不等于技术发布。"
+      },
+      {
+        "id": "deepmind",
+        "checkedAt": "2026-10-30T15:01:26.231Z",
+        "status": "failed",
+        "error": "fetch failed"
+      },
+      {
+        "id": "microsoft",
+        "checkedAt": "2026-10-30T15:01:26.233Z",
+        "status": "reachable",
+        "httpStatus": 200,
+        "finalUrl": "https://learn.microsoft.com/en-us/agent-framework/",
+        "hash": "b145fda4c8f21dd5db88ed398611205a301c69d0498aef8a2838ca323f7922ee",
+        "changed": null,
+        "note": "页面可访问不等于内容已核验；指纹变化也不等于技术发布。"
+      },
+      {
+        "id": "qwen",
+        "checkedAt": "2026-10-30T15:01:26.234Z",
+        "status": "failed",
+        "error": "fetch failed"
+      },
+      {
+        "id": "bytedance",
+        "checkedAt": "2026-10-30T15:01:26.236Z",
+        "status": "failed",
+        "error": "fetch failed"
+      },
+      {
+        "id": "anthropic",
+        "checkedAt": "2026-10-30T15:01:26.238Z",
+        "status": "failed",
+        "error": "fetch failed"
+      }
+    ]
+  },
+  "sampledAt": "2026-10-30T13:25:29.436Z",
+  "candidateCount": 82,
+  "projects": [
+    {
+      "id": "wangmiaozero/pi-harness",
+      "repo": "wangmiaozero/pi-harness",
+      "kind": "开源项目",
+      "name": "pi-harness",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 190,
+      "forks": 17,
+      "url": "https://github.com/wangmiaozero/pi-harness"
+    },
+    {
+      "id": "omnigent-ai/omnigent",
+      "repo": "omnigent-ai/omnigent",
+      "kind": "开源项目",
+      "name": "omnigent",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 11129,
+      "forks": 1830,
+      "url": "https://github.com/omnigent-ai/omnigent"
+    },
+    {
+      "id": "vllm-project/semantic-router",
+      "repo": "vllm-project/semantic-router",
+      "kind": "开源项目",
+      "name": "semantic-router",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 6338,
+      "forks": 1092,
+      "url": "https://github.com/vllm-project/semantic-router"
+    },
+    {
+      "id": "arcships/aimux",
+      "repo": "arcships/aimux",
+      "kind": "开源项目",
+      "name": "aimux",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 205,
+      "forks": 12,
+      "url": "https://github.com/arcships/aimux"
+    },
+    {
+      "id": "unslothai/unsloth",
+      "repo": "unslothai/unsloth",
+      "kind": "开源项目",
+      "name": "Unsloth",
+      "category": "模型工具",
+      "description": "提供大语言模型微调工具，帮助开发者探索针对特定任务的模型训练。",
+      "useCase": "先试试：用一小份标注数据，探索特定风格的问答模型。",
+      "tags": [
+        "模型微调",
+        "训练"
+      ],
+      "headline": "从使用模型，到尝试训练自己的模型。",
+      "audience": "适合具备 Python 与模型训练基础的开发者",
+      "language": "Python",
+      "reading": "6 分钟",
+      "stars": 78796,
+      "forks": 7322,
+      "url": "https://github.com/unslothai/unsloth"
+    },
+    {
+      "id": "sleep2agi/agent-network",
+      "repo": "sleep2agi/agent-network",
+      "kind": "开源项目",
+      "name": "agent-network",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 112,
+      "forks": 15,
+      "url": "https://github.com/sleep2agi/agent-network"
+    },
+    {
+      "id": "AgileRL/AgileRL",
+      "repo": "AgileRL/AgileRL",
+      "kind": "开源项目",
+      "name": "AgileRL",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 961,
+      "forks": 83,
+      "url": "https://github.com/AgileRL/AgileRL"
+    },
+    {
+      "id": "e2b-dev/runtime",
+      "repo": "e2b-dev/runtime",
+      "kind": "开源项目",
+      "name": "runtime",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 1786,
+      "forks": 502,
+      "url": "https://github.com/e2b-dev/runtime"
+    },
+    {
+      "id": "ginkida/gokin",
+      "repo": "ginkida/gokin",
+      "kind": "开源项目",
+      "name": "gokin",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 107,
+      "forks": 11,
+      "url": "https://github.com/ginkida/gokin"
+    },
+    {
+      "id": "gptme/gptme",
+      "repo": "gptme/gptme",
+      "kind": "开源项目",
+      "name": "gptme",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 4467,
+      "forks": 464,
+      "url": "https://github.com/gptme/gptme"
+    },
+    {
+      "id": "morluto/rea",
+      "repo": "morluto/rea",
+      "kind": "开源项目",
+      "name": "rea",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 410534,
+      "forks": 102753,
+      "url": "https://github.com/morluto/rea"
+    },
+    {
+      "id": "OpenHands/OpenHands",
+      "repo": "OpenHands/OpenHands",
+      "kind": "开源项目",
+      "name": "OpenHands",
+      "category": "智能体",
+      "description": "探索让软件开发智能体参与代码编写与开发任务。",
+      "useCase": "从一个隔离的测试仓库开始，体验 AI 辅助开发。",
+      "tags": [
+        "代码智能体",
+        "开发效率"
+      ],
+      "language": "Python",
+      "stars": 92255,
+      "forks": 12270,
+      "url": "https://github.com/OpenHands/OpenHands"
+    },
+    {
+      "id": "paperclipai/paperclip",
+      "repo": "paperclipai/paperclip",
+      "kind": "开源项目",
+      "name": "paperclip",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 108853,
+      "forks": 18025,
+      "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+      "id": "InternLM/lmdeploy",
+      "repo": "InternLM/lmdeploy",
+      "kind": "开源项目",
+      "name": "lmdeploy",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 8126,
+      "forks": 772,
+      "url": "https://github.com/InternLM/lmdeploy"
+    },
+    {
+      "id": "comet-ml/opik",
+      "repo": "comet-ml/opik",
+      "kind": "开源项目",
+      "name": "opik",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 23036,
+      "forks": 1911,
+      "url": "https://github.com/comet-ml/opik"
+    },
+    {
+      "id": "agent-of-empires/agent-of-empires",
+      "repo": "agent-of-empires/agent-of-empires",
+      "kind": "开源项目",
+      "name": "agent-of-empires",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 3395,
+      "forks": 392,
+      "url": "https://github.com/agent-of-empires/agent-of-empires"
+    },
+    {
+      "id": "beehive-lab/jitllm",
+      "repo": "beehive-lab/jitllm",
+      "kind": "开源项目",
+      "name": "jitllm",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 292,
+      "forks": 41,
+      "url": "https://github.com/beehive-lab/jitllm"
+    },
+    {
+      "id": "vllm-project/vllm-ascend",
+      "repo": "vllm-project/vllm-ascend",
+      "kind": "开源项目",
+      "name": "vllm-ascend",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 3032,
+      "forks": 2567,
+      "url": "https://github.com/vllm-project/vllm-ascend"
+    },
+    {
+      "id": "niki914/zafiro",
+      "repo": "niki914/zafiro",
+      "kind": "开源项目",
+      "name": "zafiro",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 313,
+      "forks": 52,
+      "url": "https://github.com/niki914/zafiro"
+    },
+    {
+      "id": "Mesh-LLM/mesh-llm",
+      "repo": "Mesh-LLM/mesh-llm",
+      "kind": "开源项目",
+      "name": "mesh-llm",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 3661,
+      "forks": 476,
+      "url": "https://github.com/Mesh-LLM/mesh-llm"
+    },
+    {
+      "id": "nambok/mentedb",
+      "repo": "nambok/mentedb",
+      "kind": "开源项目",
+      "name": "mentedb",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 122,
+      "forks": 8,
+      "url": "https://github.com/nambok/mentedb"
+    },
+    {
+      "id": "kirodotdev/KiroCrew",
+      "repo": "kirodotdev/KiroCrew",
+      "kind": "开源项目",
+      "name": "KiroCrew",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 4655,
+      "forks": 911,
+      "url": "https://github.com/kirodotdev/KiroCrew"
+    },
+    {
+      "id": "NousResearch/hermes-agent",
+      "repo": "NousResearch/hermes-agent",
+      "kind": "开源项目",
+      "name": "hermes-agent",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 258721,
+      "forks": 56846,
+      "url": "https://github.com/NousResearch/hermes-agent"
+    },
+    {
+      "id": "stablyai/orca",
+      "repo": "stablyai/orca",
+      "kind": "开源项目",
+      "name": "orca",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 110726,
+      "forks": 6996,
+      "url": "https://github.com/stablyai/orca"
+    },
+    {
+      "id": "nrslib/takt",
+      "repo": "nrslib/takt",
+      "kind": "开源项目",
+      "name": "takt",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 1428,
+      "forks": 116,
+      "url": "https://github.com/nrslib/takt"
+    },
+    {
+      "id": "arcships/rutis",
+      "repo": "arcships/rutis",
+      "kind": "开源项目",
+      "name": "rutis",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 161,
+      "forks": 12,
+      "url": "https://github.com/arcships/rutis"
+    },
+    {
+      "id": "subgentic/coral",
+      "repo": "subgentic/coral",
+      "kind": "开源项目",
+      "name": "coral",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 115,
+      "forks": 12,
+      "url": "https://github.com/subgentic/coral"
+    },
+    {
+      "id": "bex-co/bex",
+      "repo": "bex-co/bex",
+      "kind": "开源项目",
+      "name": "bex",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 577,
+      "forks": 65,
+      "url": "https://github.com/bex-co/bex"
+    },
+    {
+      "id": "johannesjo/parallel-code",
+      "repo": "johannesjo/parallel-code",
+      "kind": "开源项目",
+      "name": "parallel-code",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 1070,
+      "forks": 146,
+      "url": "https://github.com/johannesjo/parallel-code"
+    },
+    {
+      "id": "steerlabs/opensteer",
+      "repo": "steerlabs/opensteer",
+      "kind": "开源项目",
+      "name": "opensteer",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 204,
+      "forks": 25,
+      "url": "https://github.com/steerlabs/opensteer"
+    },
+    {
+      "id": "Danielxu0208/rsi_eval",
+      "repo": "Danielxu0208/rsi_eval",
+      "kind": "开源项目",
+      "name": "rsi_eval",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 226,
+      "forks": 12,
+      "url": "https://github.com/Danielxu0208/rsi_eval"
+    },
+    {
+      "id": "kestra-io/kestra",
+      "repo": "kestra-io/kestra",
+      "kind": "开源项目",
+      "name": "kestra",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 30077,
+      "forks": 3491,
+      "url": "https://github.com/kestra-io/kestra"
+    },
+    {
+      "id": "Sidiora-Labs/paxeer-monorepo",
+      "repo": "Sidiora-Labs/paxeer-monorepo",
+      "kind": "开源项目",
+      "name": "paxeer-monorepo",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 544,
+      "forks": 84,
+      "url": "https://github.com/Sidiora-Labs/paxeer-monorepo"
+    },
+    {
+      "id": "macro-inc/macro",
+      "repo": "macro-inc/macro",
+      "kind": "开源项目",
+      "name": "macro",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 5714,
+      "forks": 536,
+      "url": "https://github.com/macro-inc/macro"
+    },
+    {
+      "id": "hasso5703/dgx-spark-qwen38",
+      "repo": "hasso5703/dgx-spark-qwen38",
+      "kind": "开源项目",
+      "name": "dgx-spark-qwen38",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 243,
+      "forks": 22,
+      "url": "https://github.com/hasso5703/dgx-spark-qwen38"
+    },
+    {
+      "id": "gotempsh/temps",
+      "repo": "gotempsh/temps",
+      "kind": "开源项目",
+      "name": "temps",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 881,
+      "forks": 74,
+      "url": "https://github.com/gotempsh/temps"
+    },
+    {
+      "id": "CherryHQ/cherry-studio",
+      "repo": "CherryHQ/cherry-studio",
+      "kind": "开源项目",
+      "name": "cherry-studio",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 53103,
+      "forks": 5144,
+      "url": "https://github.com/CherryHQ/cherry-studio"
+    },
+    {
+      "id": "beclab/Olares",
+      "repo": "beclab/Olares",
+      "kind": "开源项目",
+      "name": "Olares",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 5335,
+      "forks": 334,
+      "url": "https://github.com/beclab/Olares"
+    },
+    {
+      "id": "NVIDIA/elements",
+      "repo": "NVIDIA/elements",
+      "kind": "开源项目",
+      "name": "elements",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 106,
+      "forks": 20,
+      "url": "https://github.com/NVIDIA/elements"
+    },
+    {
+      "id": "a2aproject/a2a-python",
+      "repo": "a2aproject/a2a-python",
+      "kind": "开源项目",
+      "name": "a2a-python",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 2222,
+      "forks": 532,
+      "url": "https://github.com/a2aproject/a2a-python"
+    },
+    {
+      "id": "openvinotoolkit/openvino",
+      "repo": "openvinotoolkit/openvino",
+      "kind": "开源项目",
+      "name": "openvino",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 11088,
+      "forks": 3501,
+      "url": "https://github.com/openvinotoolkit/openvino"
+    },
+    {
+      "id": "steven2358/awesome-generative-ai",
+      "repo": "steven2358/awesome-generative-ai",
+      "kind": "开源项目",
+      "name": "awesome-generative-ai",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 12789,
+      "forks": 2587,
+      "url": "https://github.com/steven2358/awesome-generative-ai"
+    },
+    {
+      "id": "NVIDIA-NeMo/Speech",
+      "repo": "NVIDIA-NeMo/Speech",
+      "kind": "开源项目",
+      "name": "Speech",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 18656,
+      "forks": 3668,
+      "url": "https://github.com/NVIDIA-NeMo/Speech"
+    },
+    {
+      "id": "langflow-ai/langflow",
+      "repo": "langflow-ai/langflow",
+      "kind": "开源项目",
+      "name": "Langflow",
+      "category": "智能体",
+      "description": "通过可视化方式连接模型、提示词、数据和工具，搭建 AI 应用工作流。",
+      "useCase": "先试试：做一个能查询文档、调用工具的工作助手。",
+      "tags": [
+        "可视化工作流",
+        "低代码"
+      ],
+      "headline": "把想法连成线，让 AI 工作流真正跑起来。",
+      "audience": "适合想快速验证 AI 应用的开发者与产品经理",
+      "language": "Python",
+      "reading": "4 分钟",
+      "stars": 156160,
+      "forks": 10274,
+      "url": "https://github.com/langflow-ai/langflow"
+    },
+    {
+      "id": "goruck/home-generative-agent",
+      "repo": "goruck/home-generative-agent",
+      "kind": "开源项目",
+      "name": "home-generative-agent",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 368,
+      "forks": 64,
+      "url": "https://github.com/goruck/home-generative-agent"
+    },
+    {
+      "id": "alvinreal/awesome-opensource-ai",
+      "repo": "alvinreal/awesome-opensource-ai",
+      "kind": "开源项目",
+      "name": "awesome-opensource-ai",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 4955,
+      "forks": 740,
+      "url": "https://github.com/alvinreal/awesome-opensource-ai"
+    },
+    {
+      "id": "caipe-io/ai-platform-engineering",
+      "repo": "caipe-io/ai-platform-engineering",
+      "kind": "开源项目",
+      "name": "ai-platform-engineering",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 436,
+      "forks": 91,
+      "url": "https://github.com/caipe-io/ai-platform-engineering"
+    },
+    {
+      "id": "langchain-ai/langgraphjs",
+      "repo": "langchain-ai/langgraphjs",
+      "kind": "开源项目",
+      "name": "langgraphjs",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 3386,
+      "forks": 622,
+      "url": "https://github.com/langchain-ai/langgraphjs"
+    },
+    {
+      "id": "Zipstack/unstract",
+      "repo": "Zipstack/unstract",
+      "kind": "开源项目",
+      "name": "unstract",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 7353,
+      "forks": 734,
+      "url": "https://github.com/Zipstack/unstract"
+    },
+    {
+      "id": "TanStack/ai",
+      "repo": "TanStack/ai",
+      "kind": "开源项目",
+      "name": "ai",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 3292,
+      "forks": 378,
+      "url": "https://github.com/TanStack/ai"
+    },
+    {
+      "id": "kaomei/stickman-video-director",
+      "repo": "kaomei/stickman-video-director",
+      "kind": "开源项目",
+      "name": "stickman-video-director",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 3429,
+      "forks": 511,
+      "url": "https://github.com/kaomei/stickman-video-director"
+    },
+    {
+      "id": "deepset-ai/haystack",
+      "repo": "deepset-ai/haystack",
+      "kind": "开源项目",
+      "name": "Haystack",
+      "category": "知识库",
+      "description": "用于构建检索、问答及大语言模型应用的开源框架。",
+      "useCase": "尝试组合检索器和生成模型，构建文档问答管道。",
+      "tags": [
+        "检索",
+        "应用框架"
+      ],
+      "language": "Python",
+      "stars": 26885,
+      "forks": 3367,
+      "url": "https://github.com/deepset-ai/haystack"
+    },
+    {
+      "id": "shootthesound/Fizgig",
+      "repo": "shootthesound/Fizgig",
+      "kind": "开源项目",
+      "name": "Fizgig",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 642,
+      "forks": 64,
+      "url": "https://github.com/shootthesound/Fizgig"
+    },
+    {
+      "id": "IBM/mcp-context-forge",
+      "repo": "IBM/mcp-context-forge",
+      "kind": "开源项目",
+      "name": "mcp-context-forge",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 4729,
+      "forks": 953,
+      "url": "https://github.com/IBM/mcp-context-forge"
+    },
+    {
+      "id": "Team-Commonly/commonly",
+      "repo": "Team-Commonly/commonly",
+      "kind": "开源项目",
+      "name": "commonly",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 1373,
+      "forks": 189,
+      "url": "https://github.com/Team-Commonly/commonly"
+    },
+    {
+      "id": "Comfy-Org/ComfyUI_frontend",
+      "repo": "Comfy-Org/ComfyUI_frontend",
+      "kind": "开源项目",
+      "name": "ComfyUI_frontend",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 2107,
+      "forks": 759,
+      "url": "https://github.com/Comfy-Org/ComfyUI_frontend"
+    },
+    {
+      "id": "scenario-labs/blender-plugin",
+      "repo": "scenario-labs/blender-plugin",
+      "kind": "开源项目",
+      "name": "blender-plugin",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 910,
+      "forks": 91,
+      "url": "https://github.com/scenario-labs/blender-plugin"
+    },
+    {
+      "id": "RunMaestro/Maestro",
+      "repo": "RunMaestro/Maestro",
+      "kind": "开源项目",
+      "name": "Maestro",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 3519,
+      "forks": 379,
+      "url": "https://github.com/RunMaestro/Maestro"
+    },
+    {
+      "id": "TheDesignFounder/DreamLayer-Eval",
+      "repo": "TheDesignFounder/DreamLayer-Eval",
+      "kind": "开源项目",
+      "name": "DreamLayer-Eval",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 412,
+      "forks": 204,
+      "url": "https://github.com/TheDesignFounder/DreamLayer-Eval"
+    },
+    {
+      "id": "alisaitteke/photoshop-mcp",
+      "repo": "alisaitteke/photoshop-mcp",
+      "kind": "开源项目",
+      "name": "photoshop-mcp",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 772,
+      "forks": 79,
+      "url": "https://github.com/alisaitteke/photoshop-mcp"
+    },
+    {
+      "id": "vespa-engine/vespa",
+      "repo": "vespa-engine/vespa",
+      "kind": "开源项目",
+      "name": "vespa",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 7154,
+      "forks": 748,
+      "url": "https://github.com/vespa-engine/vespa"
+    },
+    {
+      "id": "EvotecIT/OfficeIMO",
+      "repo": "EvotecIT/OfficeIMO",
+      "kind": "开源项目",
+      "name": "OfficeIMO",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 645,
+      "forks": 80,
+      "url": "https://github.com/EvotecIT/OfficeIMO"
+    },
+    {
+      "id": "xuiltul/animaworks",
+      "repo": "xuiltul/animaworks",
+      "kind": "开源项目",
+      "name": "animaworks",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 268,
+      "forks": 46,
+      "url": "https://github.com/xuiltul/animaworks"
+    },
+    {
+      "id": "metadist/synaplan",
+      "repo": "metadist/synaplan",
+      "kind": "开源项目",
+      "name": "synaplan",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 386,
+      "forks": 49,
+      "url": "https://github.com/metadist/synaplan"
+    },
+    {
+      "id": "arc53/DocsGPT",
+      "repo": "arc53/DocsGPT",
+      "kind": "开源项目",
+      "name": "DocsGPT",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 18350,
+      "forks": 2233,
+      "url": "https://github.com/arc53/DocsGPT"
+    },
+    {
+      "id": "elizaOS/eliza",
+      "repo": "elizaOS/eliza",
+      "kind": "开源项目",
+      "name": "eliza",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 19732,
+      "forks": 5851,
+      "url": "https://github.com/elizaOS/eliza"
+    },
+    {
+      "id": "infiniflow/ragflow",
+      "repo": "infiniflow/ragflow",
+      "kind": "开源项目",
+      "name": "RAGFlow",
+      "category": "知识库",
+      "description": "围绕文档解析和检索增强生成（RAG），构建基于自有资料的问答体验。",
+      "useCase": "先试试：导入几份项目文档，搭建一个个人知识库。",
+      "tags": [
+        "RAG",
+        "文档理解"
+      ],
+      "headline": "让 AI 读懂你的文档，再给出有依据的答案。",
+      "audience": "适合处理文档、研究资料和企业知识的团队",
+      "language": "Python",
+      "reading": "5 分钟",
+      "stars": 93187,
+      "forks": 11179,
+      "url": "https://github.com/infiniflow/ragflow"
+    },
+    {
+      "id": "Agent-Field/agentfield",
+      "repo": "Agent-Field/agentfield",
+      "kind": "开源项目",
+      "name": "agentfield",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 2634,
+      "forks": 433,
+      "url": "https://github.com/Agent-Field/agentfield"
+    },
+    {
+      "id": "AnalyseDeCircuit/oxideterm",
+      "repo": "AnalyseDeCircuit/oxideterm",
+      "kind": "开源项目",
+      "name": "oxideterm",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 1751,
+      "forks": 148,
+      "url": "https://github.com/AnalyseDeCircuit/oxideterm"
+    },
+    {
+      "id": "xerj-org/xerj",
+      "repo": "xerj-org/xerj",
+      "kind": "开源项目",
+      "name": "xerj",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 17640,
+      "forks": 1359,
+      "url": "https://github.com/xerj-org/xerj"
+    },
+    {
+      "id": "HybridAIOne/hybridclaw",
+      "repo": "HybridAIOne/hybridclaw",
+      "kind": "开源项目",
+      "name": "hybridclaw",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 159,
+      "forks": 17,
+      "url": "https://github.com/HybridAIOne/hybridclaw"
+    },
+    {
+      "id": "poco-ai/Agentero",
+      "repo": "poco-ai/Agentero",
+      "kind": "开源项目",
+      "name": "Agentero",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 1064,
+      "forks": 82,
+      "url": "https://github.com/poco-ai/Agentero"
+    },
+    {
+      "id": "IncarnaMind/IncarnaMind",
+      "repo": "IncarnaMind/IncarnaMind",
+      "kind": "开源项目",
+      "name": "IncarnaMind",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 847,
+      "forks": 60,
+      "url": "https://github.com/IncarnaMind/IncarnaMind"
+    },
+    {
+      "id": "nuwax-ai/nuwax",
+      "repo": "nuwax-ai/nuwax",
+      "kind": "开源项目",
+      "name": "nuwax",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 898,
+      "forks": 181,
+      "url": "https://github.com/nuwax-ai/nuwax"
+    },
+    {
+      "id": "vitali87/code-graph-rag",
+      "repo": "vitali87/code-graph-rag",
+      "kind": "开源项目",
+      "name": "code-graph-rag",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 5304,
+      "forks": 708,
+      "url": "https://github.com/vitali87/code-graph-rag"
+    },
+    {
+      "id": "patchy631/ai-engineering-hub",
+      "repo": "patchy631/ai-engineering-hub",
+      "kind": "开源项目",
+      "name": "ai-engineering-hub",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 38472,
+      "forks": 6339,
+      "url": "https://github.com/patchy631/ai-engineering-hub"
+    },
+    {
+      "id": "haoyiyin/basjoo",
+      "repo": "haoyiyin/basjoo",
+      "kind": "开源项目",
+      "name": "basjoo",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 164,
+      "forks": 91,
+      "url": "https://github.com/haoyiyin/basjoo"
+    },
+    {
+      "id": "melgarafael/DeskcommCRM",
+      "repo": "melgarafael/DeskcommCRM",
+      "kind": "开源项目",
+      "name": "DeskcommCRM",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 4957,
+      "forks": 1397,
+      "url": "https://github.com/melgarafael/DeskcommCRM"
+    },
+    {
+      "id": "xberg-io/xberg",
+      "repo": "xberg-io/xberg",
+      "kind": "开源项目",
+      "name": "xberg",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 9467,
+      "forks": 607,
+      "url": "https://github.com/xberg-io/xberg"
+    },
+    {
+      "id": "FuRongJun-1999/dsh-memory",
+      "repo": "FuRongJun-1999/dsh-memory",
+      "kind": "开源项目",
+      "name": "dsh-memory",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 540,
+      "forks": 55,
+      "url": "https://github.com/FuRongJun-1999/dsh-memory"
+    },
+    {
+      "id": "milvus-io/milvus",
+      "repo": "milvus-io/milvus",
+      "kind": "开源项目",
+      "name": "Milvus",
+      "category": "基础设施",
+      "description": "面向向量相似性检索的开源数据库。",
+      "useCase": "探索语义搜索、相似内容推荐与知识库向量检索。",
+      "tags": [
+        "向量数据库",
+        "语义搜索"
+      ],
+      "language": "Go",
+      "stars": 46536,
+      "forks": 4320,
+      "url": "https://github.com/milvus-io/milvus"
+    },
+    {
+      "id": "DenisovAV/flutter_edge_ai",
+      "repo": "DenisovAV/flutter_edge_ai",
+      "kind": "开源项目",
+      "name": "flutter_edge_ai",
+      "category": "其他 AI",
+      "description": "已纳入 AI 主题候选池。用途、许可证及部署条件请以项目仓库说明为准。",
+      "useCase": "打开 GitHub，阅读 README 并判断是否适合你的场景。",
+      "tags": [
+        "候选项目"
+      ],
+      "stars": 649,
+      "forks": 176,
+      "url": "https://github.com/DenisovAV/flutter_edge_ai"
+    }
+  ],
+  "ranking": {
+    "version": "frontier-v2",
+    "name": "前沿发现",
+    "weights": {
+      "attention": 45,
+      "momentum": 35,
+      "building": 20
+    },
+    "smoothingStars": 200,
+    "minStars7d": 20,
+    "minForks7d": 5,
+    "minComparable": 3,
+    "description": "45% 新增 Star + 35% 平滑相对增速 + 20% 新增 Fork；均按同一候选池百分位评分。"
+  },
+  "editorial": [
+    "langflow-ai/langflow",
+    "infiniflow/ragflow",
+    "unslothai/unsloth"
+  ]
+}

@@ -1,0 +1,21 @@
+<view class="page">
+  <view class="eyebrow">AI OPEN SOURCE / WEEKLY</view>
+  <view class="title">每周三件，<br/>看见 AI 的下一步。</view>
+  <view class="intro">从开源社区的变化中，发现值得了解的工具与应用。</view>
+  <view class="toolbar"><text>{{report.period}}</text><text bindtap="toggleHistory">历史周报 ↗</text></view>
+  <view wx:if="showHistory" class="history"><view wx:if="!history.length">接入数据后，会保留最近浏览的 12 期周报。</view><view wx:for="{{history}}" wx:key="period" data-index="{{index}}" bindtap="selectHistory">{{item.period}} →</view></view>
+  <view wx:if="report.demo" class="notice">演示模式 · 以下项目和指标均为示例，非本周真实排名</view>
+  <view wx:if="loading" class="notice">正在加载本周周报…</view>
+  <view wx:if="error" class="notice" bindtap="loadReport">{{error}} · 点击重试</view>
+  <view class="card" wx:for="{{report.projects}}" wx:key="repo">
+    <view class="card-top"><text class="rank">0{{index + 1}}</text><text class="tag">{{item.category}}</text></view>
+    <view class="name">{{item.name}}</view><view class="muted">{{item.repo}}</view>
+    <view class="summary">{{item.summary}}</view>
+    <view class="use"><text class="use-label">可以用来做什么</text><view>{{item.useCase}}</view></view>
+    <view class="metrics"><text>本周 Star +{{item.starsDelta}}</text><text>Fork +{{item.forksDelta}}</text></view>
+    <view class="actions"><button data-index="{{index}}" bindtap="copyRepo">复制项目链接 ↗</button><button class="save" data-index="{{index}}" bindtap="save">收藏 / 取消</button></view>
+  </view>
+  <view class="method"><view class="method-title">榜单如何产生？</view>{{report.methodology}}<view class="muted">首版仅覆盖 GitHub 候选池；社区讨论热度与真实采用量尚未接入。历史周报保存在当前设备。</view></view>
+  <view class="subscribe"><view class="method-title">留一点时间给未来</view><view class="muted">每周读懂三个开源项目。消息送达取决于微信授权及模板规则。</view><button bindtap="subscribe">订阅下一期周报</button></view>
+  <view class="footer">少一点信息噪声，多一点动手的灵感。</view>
+</view>
